@@ -1,0 +1,67 @@
+﻿@model ArtofLivingCentre.Models.Consultation
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Consultation</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.StartDateTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StartDateTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EndDateTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EndDateTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReservationTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReservationTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReservationStatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReservationStatus)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.User.UserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User.UserName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Consultant.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Consultant.FirstName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ConsultationId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
